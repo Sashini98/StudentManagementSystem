@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NIBM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<script language="javascript" type="text/javascript">
+	
+	
+
+function validate()
+{
+	if(document.Book.Name.value=="")
+	{
+		alert("Error in Name field!");
+	}
+		
+			
+	if(document.Book.day.selectedIndex==0)
+	{
+		alert("Empty Date field!");
+	}
+	
+	if(document.Book.Month.selectedIndex==0)
+	{
+		alert("Empty Month field!");
+	}
+	
+	if(document.Book.Year.selectedIndex==0)
+	{
+		alert("Empty Year field!");
+	}
+			
+	if(document.Book.Time.value=="")
+	{
+		alert("Missing Time field!");
+	}
+	
+	if(document.Book.Venue.value=="")
+	{
+		alert("Missing venue field!");
+	}
+	
+	
+	if(document.Book.Description.value=="")
+	{
+		alert("Missing Decsription field!");
+	}
+	
+}
+</script>
+  </head>
+ 
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="flaticon-university"></i>NIBM <br><small>School Support</small></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+     
+    </div>
+  </nav>
+  
+     <div class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg'); background-attachment:fixed;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Event</span></p>
+            <h1 class="mb-3 bread">Events</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+<br><h3 align="center">Add Event</h3><br><br>
+	<form name="Book" action="addevent.php" method="post" enctype="multipart/form-data">
+
+
+ 
+<table align="center" cellpadding = "10">
+
+<tr>
+<td>EVENT NAME</td>
+<td><input type="text" name="Name" maxlength="30"/>
+</td>
+</tr>
+
+ 
+<tr>
+<td>DATE</td>
+ 
+<td>
+<select name="day" id="Day">
+<option value="-1">Day:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+ 
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+ 
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+ 
+<option value="31">31</option>
+</select>
+ 
+<select id="Month" name="Month">
+<option value="-1">Month:</option>
+<option value="January">Jan</option>
+<option value="February">Feb</option>
+<option value="March">Mar</option>
+<option value="April">Apr</option>
+<option value="May">May</option>
+<option value="June">Jun</option>
+<option value="July">Jul</option>
+<option value="August">Aug</option>
+<option value="September">Sep</option>
+<option value="October">Oct</option>
+<option value="November">Nov</option>
+<option value="December">Dec</option>
+</select>
+ 
+<select name="Year" id="Year">
+ 
+<option value="-1">Year:</option>
+<option value="2012">2019</option>
+<option value="2011">2020</option>
+<option value="2011">2021</option>
+<option value="2011">2022</option>
+<option value="2011">2023</option>
+<option value="2011">2024</option>
+
+</select>
+</td>
+</tr>
+
+<tr>
+<td>TIME</td>
+<td><input type="text" name="Time"  />
+</td>
+</tr>
+ 
+<tr>
+<td>VENUE</td>
+<td>
+<input type="text" name="Venue"  />
+</td>
+</tr>
+ 
+
+<tr>
+<td>DESCRIPTION<br /><br /><br /></td>
+<td><textarea name="Description" rows="4" cols="30"></textarea></td>
+</tr>
+
+<tr>
+<td>IMAGE<br /><br /><br /></td>
+<td><input type="file" name="img" /></td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+  <input type="submit" value="submit" id="submit" name="submit" onclick="validate()">
+</td>
+</tr>
+</table>
+ 
+</form>
+
+ 
+</body>
+</html>

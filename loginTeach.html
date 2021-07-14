@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<script language="javascript" type="text/javascript">
+
+function validate()
+{
+if(document.Book.user.value=="")
+	{
+		alert("Empty username field!");
+	}
+		
+	if(document.Book.pw.value=="")
+	{
+		alert("Empty Password field!");
+	}
+	
+	}
+</script>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="css/style1234.css">
+<body>
+    <div class="loginbox">
+    <img src="images/avatar.jpeg" class="avatar">
+        <h1>Login Here</h1>
+        <form name="Book" action="loginTeach.php" method="post">
+            <p>Username</p>
+            <input type="text" name="user" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="pw" placeholder="Enter Password"><br><br><br>
+            <input type="submit" value="Let me in" id="submit" name="submit" onclick="validate()">
+           
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
